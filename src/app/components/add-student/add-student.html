@@ -1,0 +1,45 @@
+
+<div class="form-container">
+
+  <h2>Add New Student</h2>
+
+  <form (ngSubmit)="addStudent()">
+
+    <label>Student Name</label>
+    <input
+      type="text"
+      name="name"
+      [(ngModel)]="name"
+      placeholder="Enter student name"
+      required
+    />
+
+    <label>Department</label>
+    <select
+      name="department"
+      [(ngModel)]="department"
+      required
+    >
+      <option value="">Select Department</option>
+      <option value="Computer Science">Computer Science</option>
+      <option value="Information Technology">Information Technology</option>
+      <option value="Mechanical Engineering">Mechanical Engineering</option>
+      <option value="Electronics">Electronics</option>
+    </select>
+
+    <label>Email Address</label>
+    <input
+      type="email"
+      name="email"
+      [(ngModel)]="email"
+      placeholder="Enter email address"
+      required
+    />
+
+    <button type="submit">
+      Add Student
+    </button>
+
+  </form>
+
+</div>
